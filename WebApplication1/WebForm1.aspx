@@ -11,7 +11,10 @@
     <form id="form1" runat="server">
         <div>
             <asp:Button ID="Button1" runat="server" Text="text" OnClick="Button1_Click" />
+            <br/>
             <asp:Button ID="Button2" runat="server" Text="sticker" OnClick="Button2_Click" />
+            <br/>
+            <asp:Button ID="Button3" runat="server" Text="Image" OnClick="Button3_Click" />
         </div>
     </form>
 </body>
