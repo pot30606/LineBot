@@ -11,8 +11,8 @@ namespace WebApplication1
     public partial class WebForm1 : System.Web.UI.Page
     {
         private string accessToken = ConfigurationManager.AppSettings["Line:ChannelAccessToken"];
-        private string yochen = "Uac8806571d495b1f45a8d06aa5c36c6f";
-        private string yochenIssue = "3bd8MF8wWILK1f3yP4Ls146W6eo5ruNHYmGVQL7ahheyx221uYH222gnZeBRUeIS0myJe49Ld3LSonbyEUv6NbsS9iSDLVC9HrGxfPr3hbF39SIPI2sULfBcxD0QaELXdq0sozA+cZgAfL9jvep3ZQdB04t89/1O/w1cDnyilFU=";
+        private string anonymous = "U3c2655e0d3e1e331fe35df961eaa070b";
+        private string anonymousIssue = "yFDByTuynZGQnMEe7cUXmGWwkNIJpWzFEREFUtbLEj8NU2jXjgdYPyo29fsC/40A4eOXWxf2mmAfCLN7bkCRxvnzi5YeQMysj5cit9LG0z0eIjIgIiow77XFJwHsPMbKMvw3sXKoANx5XlDoLNUDowdB04t89/1O/w1cDnyilFU=";
         private string myapp = "U5a14415c05f1250f6841bc879f4129de";
 
         protected void Page_Load(object sender, EventArgs e)
@@ -35,8 +35,8 @@ namespace WebApplication1
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            isRock.LineBot.Bot bot = new isRock.LineBot.Bot(yochenIssue);
-            bot.PushMessage(yochen, new Uri("https://img.appledaily.com.tw/images/ReNews/20160418/640_e30054f5853ecc3409611a0f3f3ab25f.jpg"));
+            isRock.LineBot.Bot bot = new isRock.LineBot.Bot(anonymousIssue);
+            bot.PushMessage(anonymous, new Uri("https://img.appledaily.com.tw/images/ReNews/20160418/640_e30054f5853ecc3409611a0f3f3ab25f.jpg"));
         }
     }
 }
